@@ -1,0 +1,3 @@
+services:
+  cff.slugify:
+    class: Cocur\Slugify\Slugify

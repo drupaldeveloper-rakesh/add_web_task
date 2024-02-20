@@ -1,0 +1,19 @@
+<?php
+use Drupal\Core\Routing\RouteMatchInterface;
+
+function cff_help($route_name, RouteMatchInterface $route_match) {
+  $route_name = $route_match->getRouteName();
+
+  switch ($route_name) {
+    case 'help.page.cff':
+      return '<p>' . t('Custom Field Formatter.') . '</p>';
+  }
+}
+
+function cff_theme() {
+  return [
+    'cff_settings' => [
+      'render element' => 'form',
+    ],
+  ];
+}
