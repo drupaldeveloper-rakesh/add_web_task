@@ -114,7 +114,6 @@ class SlugifyFormatter extends FormatterBase {
       $text = $item->value;
       $separator = $this->getSetting('separator');
 
-      // Replace spaces with the chosen separator.
       $slug = $this->slugify->slugify($text, $separator);
 
       $elements[$delta] = [
